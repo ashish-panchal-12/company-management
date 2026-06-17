@@ -2,6 +2,8 @@
 
 A web-based Company Management System built using **PHP, MySQL, HTML, CSS, and JavaScript** to manage employees, departments, projects, and attendance records efficiently.
 
+For live Demo : http://company-management-system.xo.je/
+
 ## Features
 
 * Employee Management
