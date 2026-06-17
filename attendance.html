@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Attendance</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/script.js"></script>
+  <script defer src="js/attendance.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Company Management</h1>
+    <nav>
+      <a href="index.html">Dashboard</a>
+      <a href="employees.html">Employees</a>
+      <a href="departments.html">Departments</a>
+      <a href="projects.html">Projects</a>
+      <a href="attendance.html" class="active">Attendance</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Attendance</h2>
+    <div class="button-row">
+      <button id="openAddAtt" class="primary">+ Mark Attendance</button>
+    </div>
+
+    <table id="attendanceTable">
+      <thead><tr><th>ID</th><th>Employee</th><th>Date</th><th>Status</th><th>Actions</th></tr></thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <div class="modal" id="attModal">
+    <div class="card">
+      <h3 id="attModalTitle">Mark Attendance</h3>
+      <div class="input"><label for="attEmp">Employee ID</label><input id="attEmp" type="number"></div>
+      <div class="input"><label for="attDate">Date</label><input id="attDate" type="date"></div>
+      <div class="input"><label for="attStatus">Status</label>
+        <select id="attStatus">
+          <option>Present</option>
+          <option>Absent</option>
+          <option>Leave</option>
+        </select>
+      </div>
+      <div class="actions">
+        <button id="attSave" class="primary">Save</button>
+        <button id="attCancel" class="secondary">Cancel</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+company_management/
+│
+├── index.html
+├── employees.html
+├── departments.html
+├── projects.html
+├── attendance.html
+│
+├── css/
+│   └── style.css
+│
+├── js/
+│   ├── script.js
+│   ├── employees.js
+│   ├── departments.js
+│   ├── projects.js
+│   └── attendance.js
+│
+├── php/
+│   ├── config.php
+│   ├── employees.php
+│   ├── departments.php
+│   ├── projects.php
+│   └── attendance.php
+│
+└── database/
+    └── company_db.sql

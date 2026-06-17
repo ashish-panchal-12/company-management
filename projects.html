@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Projects - Company Management</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/script.js"></script>
+  <script defer src="js/projects.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Company Management</h1>
+    <nav>
+      <a href="index.html">Dashboard</a>
+      <a href="employees.html">Employees</a>
+      <a href="departments.html">Departments</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="attendance.html">Attendance</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Projects</h2>
+    <div class="button-row">
+      <button id="openAddProj" class="primary">+ Add Project</button>
+    </div>
+
+    <table id="projectTable">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Department</th>
+          <th>Start</th>
+          <th>End</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <!-- Modal for Add/Edit Project -->
+  <div class="modal" id="projModal">
+    <div class="card">
+      <h3 id="projModalTitle">Add Project</h3>
+
+      <div class="input">
+        <label for="projName">Project Name</label>
+        <input id="projName" type="text" placeholder="Enter project name">
+      </div>
+
+      <div class="input">
+        <label for="projDept">Department ID</label>
+        <input id="projDept" type="number" placeholder="Enter department ID">
+      </div>
+
+      <div class="input">
+        <label for="projStart">Start Date</label>
+        <input id="projStart" type="date">
+      </div>
+
+      <div class="input">
+        <label for="projEnd">End Date</label>
+        <input id="projEnd" type="date">
+      </div>
+
+      <div class="input">
+        <label for="projStatus">Status</label>
+        <select id="projStatus">
+          <option>Ongoing</option>
+          <option>Completed</option>
+          <option>On Hold</option>
+        </select>
+      </div>
+
+      <div class="actions">
+        <button id="projSave" class="primary">Save</button>
+        <button id="projCancel" class="secondary">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

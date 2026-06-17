@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Employees</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/script.js"></script>
+  <script defer src="js/employees.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Company Management</h1>
+    <nav>
+      <a href="index.html">Dashboard</a>
+      <a href="employees.html" class="active">Employees</a>
+      <a href="departments.html">Departments</a>
+      <a href="projects.html">Projects</a>
+      <a href="attendance.html">Attendance</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Employees</h2>
+    <div class="button-row">
+      <button id="openAddEmp" class="primary">+ Add Employee</button>
+    </div>
+
+    <table id="employeeTable">
+      <thead>
+        <tr>
+          <th>ID</th><th>Name</th><th>Email</th><th>Phone</th><th>Department</th><th>Position</th><th>Salary</th><th>Date Joined</th><th>Actions</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <!-- Employee Modal -->
+  <div class="modal" id="empModal">
+    <div class="card">
+      <h3 id="empModalTitle">Add Employee</h3>
+
+      <div class="input"><label for="empName">Name</label><input id="empName" type="text"></div>
+      <div class="input"><label for="empEmail">Email</label><input id="empEmail" type="email"></div>
+      <div class="input"><label for="empPhone">Phone</label><input id="empPhone" type="text"></div>
+      <div class="input"><label for="empDept">Department ID</label><input id="empDept" type="number"></div>
+      <div class="input"><label for="empPosition">Position</label><input id="empPosition" type="text"></div>
+      <div class="input"><label for="empSalary">Salary</label><input id="empSalary" type="number" step="0.01"></div>
+      <div class="input"><label for="empDate">Date Joined</label><input id="empDate" type="date"></div>
+
+      <div class="actions">
+        <button id="empSave" class="primary">Save</button>
+        <button id="empCancel" class="secondary">Cancel</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Departments</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/script.js"></script>
+  <script defer src="js/departments.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Company Management</h1>
+    <nav>
+      <a href="index.html">Dashboard</a>
+      <a href="employees.html">Employees</a>
+      <a href="departments.html" class="active">Departments</a>
+      <a href="projects.html">Projects</a>
+      <a href="attendance.html">Attendance</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Departments</h2>
+    <div class="button-row">
+      <button id="openAddDept" class="primary">+ Add Department</button>
+    </div>
+
+    <table id="departmentTable">
+      <thead><tr><th>ID</th><th>Name</th><th>Description</th><th>Actions</th></tr></thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal" id="deptModal">
+    <div class="card">
+      <h3 id="deptModalTitle">Add Department</h3>
+      <div class="input">
+        <label for="deptName">Name</label>
+        <input id="deptName" type="text">
+      </div>
+      <div class="input">
+        <label for="deptDesc">Description</label>
+        <textarea id="deptDesc" rows="3"></textarea>
+      </div>
+      <div class="actions">
+        <button id="deptSave" class="primary">Save</button>
+        <button id="deptCancel" class="secondary">Cancel</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

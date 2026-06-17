@@ -1,0 +1,40 @@
+/* style.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Poppins', sans-serif; background: #f5f7fb; color: #222; min-height: 100vh; }
+header { background: #0b61a4; color: #fff; display:flex; align-items:center; justify-content:space-between; padding:14px 22px; box-shadow:0 3px 12px rgba(0,0,0,0.06); }
+header h1 { font-size:18px; }
+nav a { color: #fff; margin-left:14px; text-decoration:none; font-weight:500; }
+nav a.active, nav a:hover { color: #8be3ff; }
+
+.container { max-width:1100px; margin:28px auto; padding:0 18px; }
+h2 { color:#0b61a4; margin-bottom:14px; }
+
+.button-row { display:flex; gap:10px; margin-bottom:12px; }
+button.primary { background:#0b61a4; color:#fff; border:none; padding:8px 14px; border-radius:8px; cursor:pointer; }
+button.danger { background:#e74c3c; color:#fff; border:none; padding:6px 10px; border-radius:6px; cursor:pointer; }
+button.secondary { background:#6c757d; color:#fff; padding:8px 14px; border-radius:8px; border:none; cursor:pointer; }
+
+table { width:100%; border-collapse:collapse; background:#fff; border-radius:10px; overflow:hidden; box-shadow:0 6px 20px rgba(15,15,15,0.03); }
+th, td { padding:12px 14px; border-bottom:1px solid #eee; text-align:left; font-size:14px; vertical-align:middle; }
+th { background:#0b61a4; color:#fff; font-weight:600; }
+tr:nth-child(even) td { background:#fbfcfe; }
+
+.modal { display:none; position:fixed; inset:0; background:rgba(0,0,0,0.45); justify-content:center; align-items:center; z-index:50; }
+.modal .card { background:#fff; width:480px; border-radius:10px; padding:18px; box-shadow:0 12px 40px rgba(14,14,14,0.12); }
+.input { margin-bottom:10px; }
+.input label { display:block; font-size:13px; margin-bottom:6px; color:#444;}
+.input input, .input select, .input textarea { width:100%; padding:10px; border:1px solid #ddd; border-radius:6px; font-size:14px; }
+.modal .actions { display:flex; gap:8px; justify-content:flex-end; margin-top:12px; }
+
+.notification { position: fixed; top: 20px; right: 20px; background: #00c853; color: white; padding: 12px 20px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.2); opacity: 0; transform: translateY(-20px); transition: all 0.4s ease; z-index: 1000; display: none; font-size:14px; }
+.notification.error { background: #d32f2f; }
+.notification.warning { background: #ffa000; }
+
+.footer { text-align:center; padding:16px 0; color:#777; font-size:13px; margin-top:28px; }
+@media (max-width:720px) {
+  .modal .card { width:92%; }
+  th, td { font-size:13px; }
+  header { flex-direction:column; gap:8px; align-items:flex-start; }
+}
