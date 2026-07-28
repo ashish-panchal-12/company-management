@@ -2,7 +2,7 @@
 
 A web-based Company Management System built using **PHP, MySQL, HTML, CSS, and JavaScript** to manage employees, departments, projects, and attendance records efficiently.
 
-For live Demo : https://company-management-system.infinityfreeapp.com/index.html
+For live Demo : https://company-management-system.infinityfreeapp.com/
 
 ## Features
 
